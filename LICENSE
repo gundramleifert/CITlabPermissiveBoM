@@ -12,4 +12,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-See NOTICE.md for third party libraries that are not under the Apache License
+For included third party libraries, which are not under the Apache License see
+https://github.com/CITlabRostock/CITlabLicensedBom/blob/master/NOTICE.md
