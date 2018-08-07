@@ -49,7 +49,12 @@
             <dependency>
                 <groupId>org.tensorflow</groupId>
                 <artifactId>libtensorflow</artifactId>
-                <version>1.2.1</version>
+                <version>1.8.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>1.5</version>
             </dependency>
             <dependency>
                 <groupId>eu.transkribus</groupId>
@@ -69,6 +74,11 @@
                 <version>1.0</version>
             </dependency>
             <dependency>
+                <groupId>de.uros.citlab</groupId>
+                <artifactId>confmat</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
                 <groupId>eu.transkribus</groupId>
                 <artifactId>TranskribusXMLExtractor</artifactId>
                 <version>0.3</version>
@@ -76,6 +86,12 @@
             <dependency>
                 <groupId>eu.transkribus</groupId>
                 <artifactId>TranskribusCore</artifactId>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.docx4j</groupId>
+                        <artifactId>docx4j</artifactId>
+                    </exclusion>
+                </exclusions>
                 <version>0.0.2</version>
             </dependency>
             <dependency>
@@ -125,6 +141,12 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.25</version>
             </dependency>
+            <!--planet internal log4j-->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.0.0</version>
+            </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
@@ -139,6 +161,12 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>log4j-over-slf4j</artifactId>
                 <version>1.7.25</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.25</version>
+                <!--<scope>provided</scope>-->
             </dependency>
 
 
@@ -167,8 +195,8 @@
                     <allowMajorUpdates>false</allowMajorUpdates>
                     <allowSnapshots>true</allowSnapshots>
                     <!--<excludes>-->
-                        <!--<exclude>.*[-_\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|rc|RC|M|EA)[-_\.]?[0-9]*</exclude>-->
-                        <!--<exclude>1.4-atlassian-1</exclude>-->
+                    <!--<exclude>.*[-_\.](alpha|Alpha|ALPHA|b|beta|Beta|BETA|rc|RC|M|EA)[-_\.]?[0-9]*</exclude>-->
+                    <!--<exclude>1.4-atlassian-1</exclude>-->
                     <!--</excludes>-->
                     <!--<rulesUri>classpath:///versionrules.xml</rulesUri>-->
                 </configuration>
