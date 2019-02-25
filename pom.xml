@@ -38,6 +38,11 @@
                 <artifactId>segmentation</artifactId>
                 <version>1.0.1</version>
             </dependency>
+            <dependency>
+                <groupId>de.uros.citlab</groupId>
+                <artifactId>languagemodel</artifactId>
+                <version>1.0.0</version>
+            </dependency>
 
             <!--TRANSKRIBUS-->
             <dependency>
